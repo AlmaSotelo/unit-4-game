@@ -1,40 +1,40 @@
 <!--  Crystal Collector Game, Pseudocode first
-1. set inicial values for variable: 'Wins', 'Losses', (and probably 'Your Total score is' ('score'as well),
-2. generate a random# between 19 and 120,(every time at the start of a game) and store it in var 'compuNumber';
-3. generate a random# between 1 and 12 for each crystal, and store them in the following variables:
-   red
-   blue
-   yellow
-   purple
-4. wait for user to clik any crystal,
-5. add the value of the clicked crystal in the var 'score',
-   untill it score is equals or greater than the compuNumber' 
-   5.1 if 'score' < 'compuNumber', then:
-         wait for user to clik a crystal,
-         add the value of the clicked crystal in the var 'score',   
-7. if 'score' > 'compuNumber', entonces:
-   7.1 Display "You lost!!",
-   7.2 add 1 to Losses,
-   7.3 change compuNumber to a new generated random# betwwen 19 and 120,
-   7.4 generate a random# between 1 and 12 for each crystal, and store them in the following variables:
-   7.5 var ='red',
-   7.6 var ='blue',
-   7.7 var ='yellow',
-   7.8 var ='purple',
-   7.9 clear the display "You lost!!",
-   7.10 set 'score' back to 0,  
-8. if 'Your total score is = 'compuNumber', entonces:
-   8.1 Display "You Won!",
-   8.2 add 1 to Wins,
-   8.3 change compuNumber to a new generated random# betwwen 19 and 120,
-   8.4 generate a random# between 1 and 12 for each crystal, and store them in the following variables:
-   8.5 var ='crystalNumberPosition1',
-   8.6 var ='crystalNumberPosition2',
-   8.7 var ='crystalNumberPosition3',
-   8.8 var ='crystalNumberPosition4',
-   8.9 clear the display "You Won!",
-   8.10 set 'score' back to 0,  
-
+STEP 1. set inicial values for variable: 'wins', 'losses', and 'score',
+STEP 2. generate a random# between 19 and 120,(every time at the start of a game) and store it in var 'compuNumber';
+STEP 3. generate a random# between 1 and 12 for each crystal, and store them in the following variables:
+        red
+        blue
+        yellow
+        purple
+STEP 4. create functions if needed,   
+STEP 5. set the clicking events for each image
+     5.1 wait for user to click,
+     5.2 add the value of the clicked image in the element id 'score',
+     5.3 compare values:
+          5.3.1  if 'score' < 'compuNumber', then:         
+          5.3.1.1  repeat from 5.1 untill 'score' is not lesser than the compuNumber'     
+          5.3.2  if 'Your total score is = 'compuNumber', then:
+          5.3.2.1  Display "You Won!",
+          5.3.2.2  add 1 to "wins",
+          5.3.2.3  change compuNumber to a new generated random# betwwen 19 and 120,
+          5.3.2.4  generate a random# between 1 and 12 for each crystal, and store them in the following variables:
+                   var ='red',
+                   var ='blue',
+                   var ='yellow',
+                   var ='purple',
+          5.3.2.5  set 'score' back to 0,
+          5.3.2.6  clear the display "You Won!", 
+          5.3.3  if 'score' > 'compuNumber', then: 
+          5.3.3.1  display "You lost!!",
+          5.3.3.2  add 1 to "Losses",
+          5.3.3.3  change compuNumber to a new generated random# betwwen 19 and 120,
+          5.3.3.4  generate a random# between 1 and 12 for each crystal, and store them in the following variables:
+                   var ='red',
+                   var ='blue',
+                   var ='yellow',
+          5.3.3.5  clear the display "You Lost!",
+          5.3.3.6  set 'score' back to 0,
+ 
 -->
 
 <!DOCTYPE html>
