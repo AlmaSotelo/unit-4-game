@@ -1,0 +1,76 @@
+#maincontainer {
+   width:800px;
+   margin:0 auto;
+   background-image: url("../images/pattern.png");
+   padding-bottom: 10px;
+}
+h1 {
+   background-color : orangered;
+   line-height: 50px;
+   width:200px;
+   color: aliceblue;
+   margin:10px 10px;
+}
+#directions {
+   background-color: hsla(17, 78%, 78%, 0.966);
+   margin-left:10px;
+   margin-bottom:10px;
+   width:400px;
+   color:green;
+}
+#compuNumContainer {
+   width:150px;
+   height: 100px;
+   margin-left:10px;
+   margin-bottom:10px;
+   background-color: green;
+   float: left;
+}
+#winslossesContainer {
+   width:80px;
+   height: 100px;
+   margin-left:10px;
+   margin-bottom:10px; 
+   background-color: turquoise;
+   position: relative;
+   float: left;
+}
+#red {
+   clear: both;
+}
+#pointswraper {
+    clear:both;
+
+}
+.crystalBotton {
+   float:left;
+   width:100px;
+   height: 100px;
+   margin-left:10px;
+   margin-bottom:10px;
+   background-color: aliceblue;
+}
+.crystals {
+   clear:both;
+}
+#won {
+   margin:0;   
+}
+#a, #w, #l {
+   margin:0;
+   line-height: 10px;
+}
+#scoreheading, #boxSum {
+   clear: both;
+   width:150px;
+   height: 100px;
+   margin-left:10px;
+   margin-bottom:10px;
+   background-color: teal;
+   color: aliceblue;
+}
+#scoreheading {
+   margin-top:0;
+   height: 20px; 
+}
+

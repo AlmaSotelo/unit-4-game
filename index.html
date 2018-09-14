@@ -1,0 +1,110 @@
+<!--  Crystal Collector Game, Pseudocode first
+1. set inicial values for variable: 'Wins', 'Losses', (and probably 'Your Total score is' ('score'as well),
+2. generate a random# between 19 and 120,(every time at the start of a game) and store it in var 'compuNumber';
+3. generate a random# between 1 and 12 for each crystal, and store them in the following variables:
+   red
+   blue
+   yellow
+   purple
+4. wait for user to clik any crystal,
+5. add the value of the clicked crystal in the var 'score',
+   untill it score is equals or greater than the compuNumber' 
+   5.1 if 'score' < 'compuNumber', then:
+         wait for user to clik a crystal,
+         add the value of the clicked crystal in the var 'score',   
+7. if 'score' > 'compuNumber', entonces:
+   7.1 Display "You lost!!",
+   7.2 add 1 to Losses,
+   7.3 change compuNumber to a new generated random# betwwen 19 and 120,
+   7.4 generate a random# between 1 and 12 for each crystal, and store them in the following variables:
+   7.5 var ='red',
+   7.6 var ='blue',
+   7.7 var ='yellow',
+   7.8 var ='purple',
+   7.9 clear the display "You lost!!",
+   7.10 set 'score' back to 0,  
+8. if 'Your total score is = 'compuNumber', entonces:
+   8.1 Display "You Won!",
+   8.2 add 1 to Wins,
+   8.3 change compuNumber to a new generated random# betwwen 19 and 120,
+   8.4 generate a random# between 1 and 12 for each crystal, and store them in the following variables:
+   8.5 var ='crystalNumberPosition1',
+   8.6 var ='crystalNumberPosition2',
+   8.7 var ='crystalNumberPosition3',
+   8.8 var ='crystalNumberPosition4',
+   8.9 clear the display "You Won!",
+   8.10 set 'score' back to 0,  
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>CrystalCollectorGame</title>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script type = "text/javascript" src="assets/javascript/game.js"></script>
+   <link rel="stylesheet" type = "text/css" href="./assets/css/style.css">
+  
+ <!--  <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+   
+</head>
+<body>
+
+                     <!-- The layout -->
+<section id="maincontainer">
+   <h1>CrystalsCollector!</h1>
+   <section id="directions">
+      <p>You will be given a random number at the start of the game.</p>
+      <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+      <p>You win the game by matching your total score to random number. You lose the game if your total score goes above the random number. </p>
+      <p>The value of each crystal is hidden from you until you click on it.</p>
+      <p>Each time when the game starts, the game will change the values of each crystal.</p><br>
+   </section>
+   <section id="pointswraper">
+   <div id="compuNumContainer">
+        <h2><span id="number-to-guess" ></span>
+        </h2>
+    </div>
+    
+    <div id="winslossesContainer">
+        <h4><span id="a"></span>  
+          <br>
+          Wins:<span id="w">0</span>  
+          <br>
+          Losses:<span id="l">0</span>
+        </h4>    
+    </div>
+    </section>
+    <div class="crystals">
+<!--      <div class="crystalBotton" data-name="red">      -->
+         <img id="redDiamond" class="crystalImage" src="assets/images/redDiamond.png" alt="Red Dimond" width="80px" height="100px">
+<!--      </div> 
+      <div class="crystalBotton" data-name="blue" >     -->
+         <img  id="blueHart" clase="crystalImage" src="assets/images/blueHart.png" alt="Blue Hart" width="80px" height="100px" >
+<!--      </div>
+      <div class="crystalBotton" data-name="yellow" >     -->
+         <img  id="yellow" class="crystalImage" src="assets/images/yellow.png" alt="Yellow Romboide" width="80px" height="100px">
+<!--      </div>
+      <div class="crystalBotton" data-name="purple" >    -->
+         <img  id="purpleSacalctites" src="assets/images/purpleStalactites.jpg" alt="Purple Stalactites" width="80px" height="100px">
+<!--      </div>             -->
+   </div>
+   <div id="boxesOfScore">
+      <h4 id=scoreheading>Your total score is</h4>
+      <div id="boxSum">
+        <h4><span id="score"></span></h4>
+      </div>
+   </div>    
+</section>
+</body>
+<script type = "text/javascript" src="assets/javascript/game.js"></script>
+</html>
+
+   
+   
+
+    
+   
