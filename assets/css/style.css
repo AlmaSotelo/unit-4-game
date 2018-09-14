@@ -37,6 +37,7 @@ h1 {
 }
 #red {
    clear: both;
+   
 }
 #pointswraper {
     clear:both;
@@ -52,6 +53,7 @@ h1 {
 }
 .crystals {
    clear:both;
+   margin-left:10px;
 }
 #won {
    margin:0;   

@@ -60,7 +60,7 @@ $(document).ready(function() {
     wins++; 
     $("#w").text(wins);       //5.3.2.2
     reset();                  //5.3.2.3 to 5.3.2.6
-  }  
+  };  
         // announces and adds the losses to 'losses'.
   function youLost(){         //5.3.3    
     announce="You Lost!"      
@@ -68,7 +68,7 @@ $(document).ready(function() {
     losses++;
     $("#l").text(losses);     //5.3.3.2
     reset()                   //5.3.2.3 to 5.3.2.6
-  }
+  };
   // STEP 5. setting up click for crystals images
     //.on method attaching the event CLICK and a function to the dimond image
     $("#redDiamond").on ('click', function(){  // 5.1 when the image with id '#redDiamond' is clicked, then run 
